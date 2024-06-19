@@ -11,12 +11,12 @@ export default function GoogleMap() {
       lat:32.089731,
       lng:34.832381
     },
-    zoom: 8 // Zoom level
+    zoom: 16 // Zoom level
   };
 
 
   return (
-    <div style={{ height: '400px', width: '100%' }}>
+    <div style={{ height: '400px', width: '50%'}}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyD0y-2f3prjfXVnYibVVwWuq4ww2Z7azh8' }}
         defaultCenter={defaultProps.center}

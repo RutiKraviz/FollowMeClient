@@ -1,12 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import axiosInstance from "../api";
 
 
+
 const signIn = (user) => {
+ // const navigate = useNavigate();
 
   return dispatch => {
     
-    axiosInstance.post('/Coustemer/Login', user).then(response => {
+    axiosInstance.get('/User', user).then(response => {
       console.log(response)
+      if(response.data.Role == "Driver")
+      
+    //  navigate("/Map");
       return response.data;
     }).catch(err => {
 
@@ -16,7 +22,7 @@ const signIn = (user) => {
 
 
 const logInTest = (user) => {
-  const id = 3;
+  const id = 4;
   return dispatch => {
 
     axiosInstance.get(`Coustemer?id=${id}`).then(x => {
