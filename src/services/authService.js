@@ -45,4 +45,14 @@ const logIn = (user) => {
   }
 };
 
-export { signIn, logIn, logInTest };
+const SaveDetails = (user) => {
+return dispatch => {
+  const response = axiosInstance.post('/Coustemer', user).then(x => {
+ 
+  }).catch(error => {
+    console.log(error)
+  })
+}
+};
+
+export { signIn, logIn, logInTest, SaveDetails };

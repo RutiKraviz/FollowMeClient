@@ -13,9 +13,8 @@ function App() {
   return (
     <Container>
       {/* <SignIn/> */}
-      <SignIn />
       {/* <Test/> */}
-      {/* <UserProfile/> */}
+      <UserProfile/>
       {/* <Maps/> */}
     </Container>
   );

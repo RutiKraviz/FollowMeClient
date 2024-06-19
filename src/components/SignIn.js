@@ -10,23 +10,10 @@ export default function SignIn() {
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
 
-  // axios.get(`http://localhost:4000/user/getUserByName/${userName}`)
-  // .then(data => {
-  //     console.log(data)
-  //     if (!data || data.data.password != userPassword) {
-  //        console.log('posting')
-  //         axios.post('http://localhost:4000/user/addUser', { username: userName, password: userPassword, address: null, email: null })
-  //             .then(succ => console.log("name", succ.data.username))
-  //     }
-  //     setIsLogin(true)
-  //     localStorage.setItem("currentUser", userName)
-  // }
-  // )
-
   const handleSignIn = async () => {
     try {
       const user = {name: 'RUTH', password: 'ab178'}; // await signIn(username, password);//TODO: FIX - GET FROM SERVER
-      dispatch(logInTest({username, password}));
+      dispatch(SignIn({username, password}));
       // Redirect to dashboard or do something else upon successful sign-in
     } catch (error) {
       console.error('Sign-in error:', error);

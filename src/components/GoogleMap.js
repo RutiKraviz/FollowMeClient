@@ -14,7 +14,6 @@ export default function GoogleMap() {
     zoom: 16 // Zoom level
   };
 
-
   return (
     <div style={{ height: '400px', width: '50%'}}>
       <GoogleMapReact
@@ -38,7 +37,6 @@ export default function GoogleMap() {
           text="3 City"
         />
       </GoogleMapReact> 
-
     </div>
   );
 };
